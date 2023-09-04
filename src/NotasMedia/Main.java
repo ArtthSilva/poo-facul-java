@@ -22,6 +22,13 @@ public class Main {
             soma += aluno.getNota();
         }
         double result = soma / qntNotas;
+        if (result >= 7 ){
+            System.out.println("aprovado");
+        }else if(result < 4){
+            System.out.println("reprovado");
+        }else{
+            System.out.println("final");
+        }
         System.out.println("media: "+result+" \naluno: "+aluno.getNome());
     }
 }
